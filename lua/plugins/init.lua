@@ -204,8 +204,16 @@ local plugins = {
     end,
   },
 
-  ["mfussenegger/nvim-dap"] = {},
-  ["mfussenegger/nvim-dap-python"] = {},
+  ["mfussenegger/nvim-dap"] = {
+    config = function()
+      require "plugins.configs.dap"
+      -- require("core.utils").load_mappings "dap"
+    end,
+
+    -- setup = function()
+    --   require("core.utils").load_mappings "dap"
+    -- end,
+   },
 }
 
 -- Load all plugins

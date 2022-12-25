@@ -60,6 +60,14 @@ M.general = {
 
     -- new buffer
     ["<leader>b"] = { "<cmd> enew <CR>", "new buffer" },
+
+
+    ["<leader>dp"] = {
+      function()
+        require("dap").toggle_breakpoint()
+      end,
+      "toggle breakpoint",
+    },
   },
 
   t = { ["<C-x>"] = { termcodes "<C-\\><C-N>", "escape terminal mode" } },
@@ -488,5 +496,27 @@ M.gitsigns = {
     },
   },
 }
+
+-- M.dap = {
+--   plugin = true,
+--
+--   n = {
+--     -- Debugging keys
+--     ["<leader>dp"] = {
+--       function()
+--         require("dap").toggle_breakpoint()
+--       end,
+--       "toggle breakpoint",
+--     },
+--   },
+--   -- v = {
+--   --   ["<leader>di"] = {
+--   --     function()
+--   --       require("dap").ui.variables.visual_hover()
+--   --     end,
+--   --     "visual hover",
+--   --   },
+--   -- },
+-- }
 
 return M
