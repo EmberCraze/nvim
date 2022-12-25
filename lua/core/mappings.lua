@@ -101,12 +101,25 @@ M.tabufline = {
     ["<Bslash>"] = { "<cmd> TbufPick <CR>", "Pick buffer" },
 
     -- close buffer + hide terminal buffer
-    ["<leader>x"] = {
+    -- ["<leader>x"] = {
+    --   function()
+    --     require("nvchad_ui.tabufline").close_buffer()
+    --   end,
+    --   "close buffer",
+    -- },
+    ['<leader>qb'] = {
       function()
         require("nvchad_ui.tabufline").close_buffer()
       end,
       "close buffer",
     },
+
+    ['<leader>qa'] = {
+      function()
+        require("nvchad_ui.tabufline").closeAllBufs()
+      end,
+      "close buffer",
+    }
   },
 }
 
@@ -221,12 +234,12 @@ M.lspconfig = {
       "goto_next",
     },
 
-    ["<leader>q"] = {
-      function()
-        vim.diagnostic.setloclist()
-      end,
-      "diagnostic setloclist",
-    },
+    -- ["<leader>q"] = {
+    --   function()
+    --     vim.diagnostic.setloclist()
+    --   end,
+    --   "diagnostic setloclist",
+    -- },
 
     ["<leader>fm"] = {
       function()
