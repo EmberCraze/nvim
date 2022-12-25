@@ -205,7 +205,7 @@ local plugins = {
   },
 
   ["mfussenegger/nvim-dap"] = {},
-  ["use 'mfussenegger/nvim-dap-python'"] = {},
+  ["mfussenegger/nvim-dap-python"] = {},
 }
 
 -- Load all plugins
