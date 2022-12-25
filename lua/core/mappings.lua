@@ -23,10 +23,14 @@ M.general = {
     ["<ESC>"] = { "<cmd> noh <CR>", "no highlight" },
 
     -- switch between windows
-    ["<C-h>"] = { "<C-w>h", "window left" },
-    ["<C-l>"] = { "<C-w>l", "window right" },
-    ["<C-j>"] = { "<C-w>j", "window down" },
-    ["<C-k>"] = { "<C-w>k", "window up" },
+    -- ["<C-h>"] = { "<C-w>h", "window left" },
+    -- ["<C-l>"] = { "<C-w>l", "window right" },
+    -- ["<C-j>"] = { "<C-w>j", "window down" },
+    -- ["<C-k>"] = { "<C-w>k", "window up" },
+    ["<leader>h"] = { "<C-w>h", "window left" },
+    ["<leader>l"] = { "<C-w>l", "window right" },
+    ["<leader>j"] = { "<C-w>j", "window down" },
+    ["<leader>k"] = { "<C-w>k", "window up" },
 
     -- save
     ["<C-s>"] = { "<cmd> w <CR>", "save file" },
