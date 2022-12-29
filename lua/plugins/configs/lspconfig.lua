@@ -64,7 +64,7 @@ lspconfig.sumneko_lua.setup {
   },
 }
 
--- lspconfig.pyright.setup {}
-lspconfig.jedi_language_server.setup {}
+lspconfig.pyright.setup {}
+-- lspconfig.jedi_language_server.setup {}
 
 return M
